@@ -1,0 +1,64 @@
+<html>
+    <head>
+         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="cascading-stylesheet(css).css">
+        <title> portfolio-enock-En </title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+      </head>
+  <body>
+
+<!creating option Menu>  
+<nav class="menu">
+  <div class="menu-icon" onclick="togglemenu()">
+    <i class="fas fa-bars"></i>
+  </div>
+                  <ul id="nav-links"> <li><a href="#home" onclick="showSection('home')"> <i class="fas fa-home"></i>Home</a></li>
+                      <li><a href="about.html" onclick="showSection('about')"> <i class="fas fa-user"></i>About</a></li>
+                      <li><a href="services.html" onclick="showSection('services')"><i class="fas fa-concierge-bell" ></i>Services</a></li>
+                      <li><a href="education.html" onclick="showSection('education')"><i class="fas fa-graduation-cap" ></i>Education</a></li>
+                      <li><a href="contact.html" onclick="showSection('contact')"><i class="fas fa-envelope" ></i>Contact</a></li>
+</ul>
+</nav>  
+
+
+<table border="0"><tr><td> <img src="tools/eno1.jpg" alt="circular image" class="circle-image"></td>
+    <td><h1>Enock IRADUKUNDA </h1></td></tr></table>  <p>Dive in ICT TECHNOLOGIES</p>
+    <div class="social-links">
+    <a class="gmail" href="mailto:enockiradukunda329@gmail.com" target="_blank"><i class="fas fa-envelope"></i>Email</a>
+    <a class="linkedin" href="https://www.linkedin.com/in/IRADUKUNDA-Enock-11ab91329" target="_blank"><i class="fab fa-linkedin"></i>Linkedin</a>
+    <a class="instagram" href="https://www.instagram.com/iradukunda4823" target="_blank"> <i class="fab fa-instagram"></i>Instgram</a>
+    <a class="whatsapp" href="https://wa.me/+250780599227" target="_blank"><i class="fab fa-whatsapp"></i>whatsapp</a>  
+    <a class="facebook" href="https://facebook.com/iradukunda enock" target="_blank"><i class="fab fa-facebook-f"></i>Facebook</a>     
+  </div> 
+
+<script> 
+  function togglemenu(){
+    const links= document.getElementById("nav-links");
+    links.classList.toggle("show"); 
+  }
+</script>
+
+
+<div id="home" class="section active">
+    <h5>Wellcome to my portfolio !</h5>
+  <p>I'm learners in computer Engineering, <br><br>I'm ready to engage in web development and also <br><br>Mordern websites and other related information technologies.</p>
+  </div>
+
+        
+
+  
+
+                  
+                  
+
+   <script>
+    function showSection(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(sec => sec.classList.remove('active'));
+      document.getElementById(sectionId).classList.add('active');
+    }
+  </script>
+  </body>      
+    </html>
